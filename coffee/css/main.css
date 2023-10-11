@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Batang&family=Gugi&family=Jua&display=swap&family=Nanum+Gothic&display=swap');
+
+body *{
+    /* outline: 1px solid blue; */
+}
+/* 1. 헤더 */
+.header{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* 1-1. 헤더 - nav */
+.header-nav{
+    height: 15vh;
+    max-width: 100%;
+    position: relative;
+}
+
+
+.header-nav ul{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(10%);
+    height: 100%;
+    /* outline: 1px solid black; */
+}
+
+.header-nav ul li{
+    position: relative;
+    width: 11%;
+    height: 100%;
+    
+}
+.header-nav ul li:nth-child(5){
+    width: 25%;
+    display: block;
+}
+.header-nav ul li:nth-child(5) img{
+    display: block;
+    margin: 0 auto;
+}
+
+.header-nav ul li a{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10%; 
+    text-align: center;
+
+}
+.header-nav ul li a span{
+    /* top: 50%; */
+    font-size: 1em;
+    color: black;
+    /* position: absolute; */
+    /* top: 50%; */
+}
+
+
+
+/* 1.2. 헤더 - 슬라이드 */
+.slide-banner{
+    height: 85vh;
+    max-width: 100%;
+    background-color: yellow;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+
+}
