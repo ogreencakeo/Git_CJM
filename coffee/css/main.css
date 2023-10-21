@@ -73,4 +73,21 @@ body *{
     height: 100vh;
     width: 100vw;
     outline: 1px solid black;
+    background-color: #fcf5e0;
+}
+
+/* 메인페이지2 */
+.page2{
+    position: relative;
+}
+.main-page-img {
+    position: absolute;
+    display: flex;
+    top: 20%;
+}
+.main-page-img img{
+    flex: 1;
+    display: block;
+    width: 45vw;
+    height: 70vh;
 }
