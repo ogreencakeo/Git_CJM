@@ -10,8 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function createMouseBox(x, y, imageUrl) {
         const mouseBox = document.createElement("div");
         mouseBox.className = "mouseBox";
+        
+        // Generate a random rotation value between -50deg and 50deg
+        const randomRotation = Math.floor(Math.random() * 101) - 50;
+        
         mouseBox.style.left = x + "px";
         mouseBox.style.top = y + "px";
+        mouseBox.style.transform = `rotate(${randomRotation}deg)`;
         mouseBox.innerHTML = `<img class="lazyloaded" src="${imageUrl}">`;
         imageWrapper.appendChild(mouseBox);
 
@@ -21,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 mouseBox.remove();
             }, 200);
-        }, 1000);
+        }, 500);
 
         return mouseBox;
     }
@@ -38,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             canShowImage = false;
             setTimeout(() => {
                 canShowImage = true;
-            }, 100); // Set the interval to 1 second
+            }, 200); // Set the interval to 1 second
         }
     });
 });
